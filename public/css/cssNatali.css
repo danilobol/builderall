@@ -1,0 +1,400 @@
+/*.title-index{*/
+/*    position: center;*/
+/*    !*padding: 50px;*!*/
+/*    color: #0c0c0c;*/
+/*    font-family: "Ubuntu Condensed","Trebuchet MS","Lucida Grande","Lucida Sans Unicode","Lucida Sans",Tahoma,sans-serif;*/
+/*    font-weight: 400;*/
+/*    margin: .6em 0;*/
+/*    !*line-height: 1.2;*!*/
+
+/*    border: 5px solid red;*/
+/*    padding: 0em 1em;*/
+/*    border-radius: 16px;*/
+/*    font-size: 24px;*/
+/*    line-height: 2;*/
+/*    -webkit-box-decoration-break: clone;*/
+/*    -o-box-decoration-break: clone;*/
+/*    box-decoration-break: clone;*/
+
+/*    */
+/*}*/
+
+
+.title-index{
+    margin: 6 auto;
+    margin-left: 35%;
+    background: red;
+    font-family: "Ubuntu Condensed","Trebuchet MS","Lucida Grande","Lucida Sans Unicode","Lucida Sans",Tahoma,sans-serif;
+    font-size: 1.3em;
+    font-weight: 400;
+    line-height: 1.6em;
+    border-radius: 15px;
+    border-bottom-width: 30px;
+    /*margin: .6em 0;*/
+    width: 800px;
+    height: auto;
+    color: #fff;
+    padding: 20px;
+    position: relative;
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+}
+
+.title-index:after{
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    /*Faz seta "apontar para baixo. Definir o valor como 'top' fará ela "apontar para cima" */
+    /*Aqui entra a cor da "aba" do balão */
+    border-top: 20px solid red;
+    bottom: -20px;
+    left: 20%;
+}
+
+.animTitle{
+    width: 100px;
+    width: 500px;
+    position: relative;
+    background-color: red;
+    animation-name: example;
+    animation-duration: 3s;
+    animation-delay: 2s;
+    animation-fill-mode: both;
+}
+
+@keyframes example {
+    0%   { left:0px; top:0px;}
+    25%  {left:200px; top:0px;}
+    50%  {left:200px; top:0px;}
+    75%  {left:0px; top:0px;}
+    100% {left:0px; top:0px;}
+}
+
+.navigation__link{
+    color: #ff0000;
+    border-bottom: #0c0000;
+    border-bottom-width: 50px;
+    font-family: "Ubuntu Condensed","Trebuchet MS","Lucida Grande","Lucida Sans Unicode","Lucida Sans",Tahoma,sans-serif;
+    text-transform: uppercase;
+    font-size: 117%;
+    display: block;
+    cursor: pointer;
+    outline: 0;
+    text-decoration: none;
+
+    background-position: -313px -434px;
+    width: 22px;
+    height: 22px;
+    content: '';
+    margin: 0 auto 3px;
+    vertical-align: middle;
+}
+
+.login__button{
+    box-shadow: 0 3px 0 1px rgba(18, 35, 102, 0.3);
+    display: inline-block;
+    text-align: center;
+    background-color: #0c0000;
+    border-color: #42eadd;
+    font-size: 32px;
+    padding: 12px 24px;
+    margin-bottom: 4px;
+    width: 100%;
+    border-radius: 5px;
+    border-width: 2px;
+    line-height: 1.2;
+    border-style: solid;
+    text-transform: uppercase;
+    color: #faf9f9;
+    cursor: pointer;
+    outline: 0;
+    text-decoration: none;
+    -webkit-font-smoothing: antialiased;
+    font-family: Ubuntu,"Trebuchet MS","Lucida Grande","Lucida Sans Unicode","Lucida Sans",Tahoma,sans-serif;
+    position: relative;
+
+}
+
+.registrar__button{
+    box-shadow: 0 3px 0 1px rgba(18, 35, 102, 0.3);
+    background-color: #810025;
+    border-color: #42eadd;
+    position: relative;
+}
+
+.menu__inicial{
+    position: fixed;
+    width: 100%;
+    height: 20%;
+    line-height:2;
+    /*z-index: 1;*/
+    /*background-color: red;*/
+    /*border-bottom: black;*/
+    /*border-bottom-width: 90px;*/
+    z-index: 500;
+    border-bottom: 5px solid black;
+    opacity: 0.8;
+    background: rgba(255, 0, 0, 0.38) url("https://blog.ipog.edu.br/wp-content/uploads/2018/07/contratar-um-bom-advogado.jpg") no-repeat fixed top;
+
+
+}
+
+.row{
+    border: black;
+}
+
+body {
+    /*background-image: url("http://www.lklaw.com.br/wp-content/uploads/2018/06/background.jpg");*/
+    background-color: rgb(255, 255, 255);
+}
+
+
+.header{
+    background-color: #0c0000;
+    border: black;
+    border-bottom-width: 60px;
+    border-bottom: black;
+    color: #0c0000;
+}
+
+.npar{
+    background-color: rgba(255, 0, 0, 0.33);
+}
+
+.nimpar{
+    background-color: rgba(246, 215, 215, 0.57);
+}
+
+.divshome{
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.conteinernav{
+    height: 30px;
+}
+
+.nav-link{
+    color: white;
+    text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+    font-size: 25px;
+}
+
+.card-img-top.img{
+    width: 300px;
+    height: 300px;
+}
+
+/* O container geral define a perspectiva */
+.flip-container { perspective: 1000; }
+
+/* vira os containers frente e verso quando o mouse passa em cima */
+.flip-container:hover .flipper, .flip-container.hover .flipper {
+    transform: rotateY(180deg);
+}
+.flip-container, .front, .back {
+    width: 320px;
+    height: 480px;
+}
+
+/* define a velocidade da transição */
+.flipper {
+    transition: 0.6s;
+    transform-style: preserve-3d;
+    position: relative;
+}
+
+/* esconde o verso durante a animação */
+.front, .back {
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+
+.blocoFoto {
+    margin: 10px;
+    position: center;
+    top: 80%;
+    -ms-transform: translateY(-20%);
+    transform: translateY(30%);
+}
+
+/* frente posicionada sobre o verso */
+.front { z-index: 2;  }
+
+/* verso inicialmente escondido */
+.back { transform: rotateY(180deg); }
+
+
+
+/*Menu Lateral admin*/
+
+@charset "UTF-8";
+/* =CSS Reset */
+/* https://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+*, html, body {
+    margin:0;
+    padding:0;
+}
+... /* mais regras CSS reset */
+
+    /* regra para o box-sizing */
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+/* regra para o clear float */
+.cf:before,
+.cf:after {content: " ";display: table;}
+.cf:after {clear: both;}
+.cf {*zoom: 1;}
+body {
+    /*margin-left:55px; !* espaço à esquerda para a barra vertical vísivel do menu *!*/
+    font:  62.5%/1.2 Verdana, Helvetica, Arial, sans-serif;
+}
+
+#lateral {
+    padding:0 50px 0 0;
+    -moz-transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    font-size:1.2em;
+    background:rgb(44,62,80);
+    background-image: -moz-linear-gradient(135deg, rgb(3,8,12), rgb(16,57,79));
+    background-image: -webkit-linear-gradient(135deg, rgb(3,8,12), rgb(16,57,79));
+    background-image: -o-linear-gradient(135deg, rgb(3,8,12), rgb(16,57,79) );
+    background-image: -ms-linear-gradient(135deg, rgb(3,8,12), rgb(16,57,79));
+    background-image: linear-gradient(135deg, rgb(3,8,12), rgb(16,57,79));
+    height:100%;
+    overflow:hidden;
+    width:370px;
+    position:fixed;
+    top:0;
+    left:-320px;
+}
+#lateral:before {
+    z-index:1000;
+    content: url(icone-menu.png);
+    font-size:4em;
+    color:white;
+    position:fixed;
+    left:4px;
+    top:45px;
+}
+#lateral:hover:before, #lateral:focus:before {
+    left:-500px
+}
+#lateral:hover, #lateral:focus,  #lateral:active  {
+    overflow-y:scroll;
+    -moz-transform: translate(320px, 0);
+    -webkit-transform: translate(320px, 0);
+    -o-transform: translate(320px, 0);
+    transform: translate(320px, 0);
+    padding-right:0;
+}
+
+#lateral .box {
+    list-style-type:none;
+    margin-bottom:1em;;
+    padding-bottom:1em;
+}
+#lateral h3 {
+    display:inline-block;
+    font-weight:bold;
+    font-size:1.6em;
+    font-style:normal;
+    padding-bottom:0.2em;
+    margin: 2em 0 2em 0.81em;
+    color:rgb(255,255,255);
+    border-bottom: 4px solid rgb(155,155,155);
+}
+#menu {
+    z-index: 500;
+    font-style:italic;
+    position:relative;
+    font-size:1.0em;
+    margin:1em 0 1em -1em;
+    padding:0;
+}
+#menu li {padding:0; margin:0;}
+#menu li a,  #menu li a:link {
+    font-size:1.2em;
+    color:rgb(255,255,255);
+    text-decoration: none;
+    padding: 0.8em 0 0.8em 1em;
+    display: block;
+    -moz-transition: all 1.2s ease;
+    -webkit-transition: all 1.2s ease;
+    -o-transition: all 1.2s ease;
+    transition: all 1.2s ease;
+}
+#menu li a:hover {
+    color:rgb(255,255,255);
+    background-color:rgba(255,255,255,0.2);
+    -moz-transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+@media (max-width: 500px) {
+    body {margin-left:0;background-size:100% 28em!important;}
+    #lateral {
+        padding:0;
+        -moz-transition: all 0.5s ease;
+        -webkit-transition: all 0.5s ease;
+        -o-transition: all 0.5s ease;
+        transition: all 0.5s ease;
+        font-size:1.2em;
+        height:100%;
+        overflow:auto;
+        width:100%;
+        position:static;
+        top:0;
+        left:0;
+    }
+    #lateral:before {
+        z-index:1000;
+        width:0;
+        text-align:center;
+        content: "";
+        font-size:0;
+        color:white;
+        position:static;
+        top:0;
+        left:0;
+        display:inline-block;
+    }
+    #lateral:hover, #lateral:focus {
+        overflow:scroll;
+        -moz-transform: none;
+        -webkit-transform: none;
+        -o-transform:none;
+        transform:none;
+    }
+    #menu li a {border-bottom:1px solid #ccc;}
+    #menu li:first-child a {border-top:1px solid #ccc;}
+}
+
+.botaosair{
+    height: 50px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 130px;
+    padding: 10px;
+    margin-top: 0;
+}
