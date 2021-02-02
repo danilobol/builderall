@@ -1,2 +1,3 @@
 # builderall
-teste programação
+Teste programação
+O banco de dados está dentro da basta database do projeto.
